@@ -6,6 +6,27 @@ Proof of concept for this [issue](https://github.com/IvanRublev/Domo/issues/3) i
 
 Run the the proof of concept for the bug with the included docker stack for development and production.
 
+### Setup Env file
+
+Copy the example file:
+
+```
+cp .env.example .env
+```
+
+Create the secret key base:
+
+```
+$ mix phx.gen.secret
+zf1VzetidccgkGNVTOij+fOVh+2GJbyME8zyX6ZcoTL6Jg+xCjqBPIcNnyQhkbti
+```
+
+Add the secret to the `.env` file:
+
+```
+SECRET_KEY_BASE=zf1VzetidccgkGNVTOij+fOVh+2GJbyME8zyX6ZcoTL6Jg+xCjqBPIcNnyQhkbti
+```
+
 ### Dev
 
 Build the development image:
